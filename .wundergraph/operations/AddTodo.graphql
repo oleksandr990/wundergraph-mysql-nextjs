@@ -1,0 +1,11 @@
+mutation (
+    $title: String!
+    $message: String!
+)
+{
+    createOnetodos: db_createOnetodos(data: {title: $title message: $message}){
+        id
+        message
+        title
+    }
+}
